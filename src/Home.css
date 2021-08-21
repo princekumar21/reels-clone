@@ -1,0 +1,55 @@
+.logout_button {
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  height: 76px;
+  width: 76px;
+  border-radius: 57px;
+}
+
+.profile_button{
+  position: fixed;
+  right: 1rem;
+  bottom: 12rem;
+  height: 76px;
+  width: 76px;
+  border-radius: 57px;
+}
+
+.upload_bttn{
+  position: absolute;
+    right: 0;
+    bottom: 10rem;
+    width: 8rem;
+}
+
+.posts_container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+
+
+.post_video {
+  height: 82vh;
+  width: 28vw;
+
+  border-radius: 17px;
+  border: 1px solid white;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* Hide scrollbar from Chrome, Safari and opera */
+.post_video::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar from IE, Edge and Firefox */
+.post_video {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

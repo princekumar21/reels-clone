@@ -1,0 +1,116 @@
+.videoCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  scroll-snap-align: start;
+}
+
+.videoCard_player {
+  object-fit: fill;
+  border-radius: 17px;
+  height: 100%;
+  width: 100%;
+}
+
+.comment_box {
+  position: absolute;
+  height: 45vh;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  border-radius: 16px 16px;
+  clip-path: circle(141.4% at 100% 0);
+  transition: all 0.3s;
+}
+
+/* .comment_close {
+  position: absolute;
+  right: 3px;
+} */
+
+#comment_backButton {
+  display: flex;
+
+  padding: 3px;
+  align-items: center;
+  margin-left: 6px;
+}
+#comment_text {
+  margin-left: 17px;
+  margin-top: 7px;
+}
+
+.display_allComment {
+  position: relative;
+  margin-top: 0.1rem;
+  height: 31vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.message_Comment {
+  position: fixed;
+  bottom: 3.7rem;
+  width: 27%;
+}
+
+/* Hide scrollbar from Chrome, Safari and opera */
+.display_allComment::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar from IE, Edge and Firefox */
+.display_allComment {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.comment_profile {
+  top: 33px;
+  left: 5px;
+}
+
+.comment_input {
+  width: 17rem;
+  margin-left: 49px;
+}
+
+.comment_input > input {
+  border: 1px solid blue;
+  border-radius: 27px;
+}
+
+.comment_postIcon {
+  position: absolute;
+  right: -6px;
+  margin-top: 4px;
+}
+
+.single_comment {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: #f3f3ff;
+}
+
+#comment_profile {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 16px;
+  margin-left: 8px;
+}
+
+.comment_username {
+  color: #222024;
+  font-weight: 600;
+  width: 85px;
+  max-width: 111px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+#commment_comment {
+  color: #222024;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: cursive;
+}

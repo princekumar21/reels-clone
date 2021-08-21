@@ -1,0 +1,90 @@
+.video_footer {
+  position: absolute;
+    display: flex;
+    
+    height: 15rem;
+    width: 100%;
+    bottom: 10px;
+    margin-left: 7px;
+}
+
+.videofooter_actionleft {
+ 
+  height: 100%;
+  width: 80%;
+}
+
+.videofooter_actionright {
+  display: flex;
+  color: #FDFEFF;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  height: 100%;
+  width: 20%;
+}
+
+.like {
+  color: #fdfeff;
+}
+#comment_viewer{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#comment_viewer > p{
+  height: 0px;
+  margin-top: -12px;
+}
+.comment {
+  color: #fdfeff;
+}
+
+
+.videofooter_text {
+  display: flex;
+  align-items: flex-start;
+  color: #fdfeff;
+  margin-top: 10rem;
+}
+
+.videofooter_text > p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 0.7rem;
+  font-weight: 600;
+}
+
+.videofooter_text > p > button {
+  color: #FDFEFF;
+  text-transform: inherit;
+}
+
+.videofooter_ticker {
+  width: 80%;
+  font-weight: 400;
+}
+
+.videofooter_ticker > .ticker {
+  color: #fdfeff;
+  margin-left: 20px;
+  bottom: 22px;
+}
+
+.music_icon {
+  color: #fdfeff;
+}
+
+.ticker_song {
+  color: #fdfeff;
+}
+
+.square_profile > img{
+ border: 3px solid #FDFEFF;
+    border-radius: 10px;
+    font-size: 10px;
+    height: 34px !important;
+    width: 32px !important;
+}
+

@@ -1,0 +1,92 @@
+#profile_viewer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #f3f3ff;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profile_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 24rem;
+  width: 22rem;
+  background-color: #ffffff;
+  box-shadow: 11px 8px 20px 3px #e9e9e9;
+  border-radius: 19px;
+  margin-top: 2rem;
+}
+
+#video_viewer {
+  display: flex;
+  align-items: center;
+  height: 11rem;
+  width: 71rem;
+  background-color: #f3f3ff;
+  box-shadow: 11px 8px 20px 3px #e9e9e9;
+  border-radius: 19px;
+  margin-top: 1rem;
+}
+
+#image {
+  width: 13rem;
+  height: 13rem;
+  border: 3px solid #ffffff;
+  border-radius: 100px;
+  box-shadow: 5px -1px 13px 4px grey;
+  margin-top: 20px;
+}
+
+.display_video {
+  background-color: #ffffff;
+  border: 1px solid black;
+  height: 90%;
+  width: 13%;
+}
+
+.profile_video{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid blue;
+    height: 11rem;
+    margin-top: 1rem;
+    width: 66rem;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 11px 8px 20px 3px #e9e9e9;
+    overflow-x: scroll;
+
+}
+/* Hide scrollbar from Chrome, Safari and opera */
+.profile_video::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar from IE, Edge and Firefox */
+.profile_video {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
+#back_button{
+  position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 2rem;
+    top: 2rem;
+}
+
+#reels {
+  margin-left: 11px;
+}
+
+#back_button:hover{
+  cursor: pointer;
+}
