@@ -1,26 +1,25 @@
 .video_footer {
   position: absolute;
-    display: flex;
-    
-    height: 15rem;
-    width: 100%;
-    bottom: 10px;
-    margin-left: 7px;
+  display: flex;
+
+  height: 15rem;
+  width: 100%;
+  bottom: 10px;
+  margin-left: 7px;
 }
 
 .videofooter_actionleft {
- 
   height: 100%;
   width: 80%;
 }
 
 .videofooter_actionright {
   display: flex;
-  color: #FDFEFF;
+  color: #fdfeff;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
+
   height: 100%;
   width: 20%;
 }
@@ -28,19 +27,18 @@
 .like {
   color: #fdfeff;
 }
-#comment_viewer{
+#comment_viewer {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-#comment_viewer > p{
+#comment_viewer > p {
   height: 0px;
   margin-top: -12px;
 }
 .comment {
   color: #fdfeff;
 }
-
 
 .videofooter_text {
   display: flex;
@@ -57,7 +55,7 @@
 }
 
 .videofooter_text > p > button {
-  color: #FDFEFF;
+  color: #fdfeff;
   text-transform: inherit;
 }
 
@@ -80,11 +78,10 @@
   color: #fdfeff;
 }
 
-.square_profile > img{
- border: 3px solid #FDFEFF;
-    border-radius: 10px;
-    font-size: 10px;
-    height: 34px !important;
-    width: 32px !important;
+.square_profile > img {
+  border: 3px solid #fdfeff;
+  border-radius: 10px;
+  font-size: 10px;
+  height: 34px !important;
+  width: 32px !important;
 }
-

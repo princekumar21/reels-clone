@@ -1,5 +1,5 @@
-import React, { useState, createContext ,useEffect} from "react";
-import { auth, firestore} from "./firebase";
+import React, { useState, createContext, useEffect } from "react";
+import { auth, firestore } from "./firebase";
 
 export const AuthContext = createContext();
 
@@ -24,9 +24,8 @@ let AuthProvider = ({ children }) => {
       setLoading(false);
     });
     return () => {
-        unsub();
-    }
-    
+      unsub();
+    };
   }, []);
 
   return (

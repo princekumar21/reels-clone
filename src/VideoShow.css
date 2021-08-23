@@ -7,17 +7,17 @@
   background-color: #f3f3ff;
   border-radius: 19px;
   margin-left: 23px;
-  box-shadow: 11px 8px 20px 3px #e9e9e9
+  box-shadow: 11px 8px 20px 3px #e9e9e9;
 }
 #video_insideHolder {
-    width: 10rem;
-    height: 8rem;
-    border-radius: 15px;
+  width: 10rem;
+  height: 8rem;
+  border-radius: 15px;
 }
 
 .video_view {
   height: 100%;
-    width: 100%;
-    object-fit: fill;
-    border-radius: 23px;
+  width: 100%;
+  object-fit: fill;
+  border-radius: 23px;
 }

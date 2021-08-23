@@ -9,7 +9,7 @@ import { Avatar, Button } from "@material-ui/core";
 import { AuthContext } from "./AuthProvider";
 import SendIcon from "@material-ui/icons/Send";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
-import {Link, Redirect} from "react-router-dom"
+import { Link, Redirect } from "react-router-dom";
 
 function VideoFooter(props) {
   let value = useContext(AuthContext);
@@ -17,7 +17,6 @@ function VideoFooter(props) {
 
   // console.log(props.post.didLikes);
   //  console.log(props.post.id);
-  
 
   useEffect(() => {
     let f = async () => {
@@ -26,10 +25,7 @@ function VideoFooter(props) {
         .doc(props.post.id)
         .get();
 
-       
-
-        setColor(querySnapShot.data().didLikes);
-      
+      setColor(querySnapShot.data().didLikes);
     };
     f();
   });
@@ -39,7 +35,11 @@ function VideoFooter(props) {
       <div className="videofooter_actionleft">
         <div className="videofooter_text">
           {/* {console.log(value.photoURL)} */}
-         { value?.photoURL ? <Avatar src={value.photoURL}/> : <Redirect to="/home" />}
+          {value?.photoURL ? (
+            <Avatar src={value.photoURL} />
+          ) : (
+            <Redirect to="/home" />
+          )}
           <p>
             {value?.displayName} •<Button>Follow</Button>
           </p>
@@ -62,9 +62,8 @@ function VideoFooter(props) {
           className="like"
           onClick={(event) => {
             if (color) {
-              
               event.target.style.color = "#ffffff";
-             
+
               firestore.collection("posts").doc(props.post.id).update({
                 didLikes: false,
               });

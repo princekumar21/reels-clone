@@ -2,7 +2,7 @@ import "./Profile.css";
 import { firestore } from "./firebase";
 import { useEffect, useContext, useState } from "react";
 import { AuthContext } from "./AuthProvider";
-import { Redirect , Link} from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 import VideoShow from "./VideoShow";
 
 import ArrowBackTwoToneIcon from "@material-ui/icons/ArrowBackTwoTone";
@@ -12,8 +12,6 @@ let Profile = () => {
   const [noOfPost, setNoOfPost] = useState(0);
   const [postUrl, setPostUrl] = useState([]);
   const [noOfComment, setNoofComment] = useState([]);
-
- 
 
   useEffect(() => {
     let arr = [];
@@ -27,8 +25,7 @@ let Profile = () => {
         setNoofComment(doc.data().comment);
         arr.push(doc.data().url);
       });
-      if(arr.length !== undefined){
-
+      if (arr.length !== undefined) {
         setPostUrl(arr);
       }
     };
@@ -47,7 +44,7 @@ let Profile = () => {
             </Link>
           </div>
           <div id="profile_info">
-            <img src={value.photoURL} id="image" />
+            <img src={value.photoURL} id="image" alt="Not available" />
             <h3>{value.displayName}</h3>
             <h6>No of Post : {noOfPost}</h6>
             <h6>
@@ -65,7 +62,6 @@ let Profile = () => {
                 return <VideoShow key={index} post={post} />;
               })
             )}
-            
           </div>
         </div>
       ) : (

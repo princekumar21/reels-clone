@@ -2,9 +2,9 @@ import firebase from "firebase/app";
 
 import "firebase/firestore";
 import "firebase/auth";
-import "firebase/storage"
+import "firebase/storage";
 
-import { firebaseConfig } from "./config.js"
+import { firebaseConfig } from "./config.js";
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 

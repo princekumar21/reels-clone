@@ -41,13 +41,12 @@ function Home() {
       {value ? (
         <>
           <Link to="/profile">
-          <button
-            type="button"
-            className="btn btn-primary m-4 profile_button"
-            
-          >
-            Profile
-          </button>
+            <button
+              type="button"
+              className="btn btn-primary m-4 profile_button"
+            >
+              Profile
+            </button>
           </Link>
 
           <input
@@ -62,7 +61,6 @@ function Home() {
             onChange={(e) => {
               if (!e.currentTarget.files[0]) return;
 
-              
               let { type, size } = e.currentTarget.files[0];
 
               let file = e.currentTarget.files[0];
@@ -87,11 +85,11 @@ function Home() {
                   p.then((url) => {
                     firestore.collection("posts").add({
                       username: value.displayName,
-                      emailId : value.email,
-                      url : url,
+                      emailId: value.email,
+                      url: url,
                       photoUrl: value.photoURL,
                       likes: 0,
-                      didLikes : false,
+                      didLikes: false,
                       comment: [],
                     });
                   });

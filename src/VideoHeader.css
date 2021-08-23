@@ -1,8 +1,8 @@
-.videoHeader{
-    position: absolute;
-    display: flex;
-    color: #FDFEFF;
-    justify-content: space-between;
-    padding: 5px;
-    width: 100%;
+.videoHeader {
+  position: absolute;
+  display: flex;
+  color: #fdfeff;
+  justify-content: space-between;
+  padding: 5px;
+  width: 100%;
 }

@@ -2,10 +2,8 @@ import React, { useState, useRef, useContext, useEffect } from "react";
 import VideoHeader from "./VideoHeader";
 import VideoFooter from "./VideoFooter";
 import "./VideoCard.css";
-import CancelOutlinedIcon from "@material-ui/icons/CancelOutlined";
 import Input from "@material-ui/core/Input";
 import SendIcon from "@material-ui/icons/Send";
-
 import { Avatar } from "@material-ui/core";
 import { AuthContext } from "./AuthProvider";
 import { firestore } from "./firebase";
@@ -17,30 +15,26 @@ let VideoCard = (props) => {
   const [currUserComment, setCurrUserComment] = useState("");
   const [allComment, setAllComment] = useState([]);
   const [commentCount, setCommentCount] = useState(0);
-  
- 
+
   useEffect(() => {
     let f = async () => {
-      
       let allCommentId = props.post.comment;
-      
-      if(allCommentId == undefined){
+
+      if (allCommentId == undefined) {
         setCommentCount(0);
-      }else{
+      } else {
         setCommentCount(allCommentId.length);
-         let arr = [];
-         for (let i = 0; i < allCommentId.length; i++) {
-           let id = allCommentId[i];
+        let arr = [];
+        for (let i = 0; i < allCommentId.length; i++) {
+          let id = allCommentId[i];
 
-           let doc = await firestore.collection("comments").doc(id).get();
-           let commentData = { ...doc.data(), id: doc.id };
-           arr.push(commentData);
-         }
+          let doc = await firestore.collection("comments").doc(id).get();
+          let commentData = { ...doc.data(), id: doc.id };
+          arr.push(commentData);
+        }
 
-         setAllComment(arr);
+        setAllComment(arr);
       }
-     
-       
     };
 
     f();

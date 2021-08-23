@@ -7,7 +7,7 @@
   border-radius: 57px;
 }
 
-.profile_button{
+.profile_button {
   position: fixed;
   right: 1rem;
   bottom: 12rem;
@@ -16,11 +16,11 @@
   border-radius: 57px;
 }
 
-.upload_bttn{
+.upload_bttn {
   position: absolute;
-    right: 0;
-    bottom: 10rem;
-    width: 8rem;
+  right: 0;
+  bottom: 10rem;
+  width: 8rem;
 }
 
 .posts_container {
@@ -30,8 +30,6 @@
   width: 100vw;
   background-color: black;
 }
-
-
 
 .post_video {
   height: 82vh;
