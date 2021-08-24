@@ -1,3 +1,31 @@
+## Description 
+**A reels clone is a `React` `Material UI` and `Firebase` Based Application** **Features is listed below** 
+A user can upload own **reels and watch reels** of different users.\
+One can **Like and Comment** on each reel of another users.\
+Can also **Add Songs** which plays when video starts.\
+Clicking on profile jumps to profile page where user's profile image , number of video post uploaded and number of comments have been done will be shown.\
+Firebase is used to store reel posts , Likes, Comments on each post of the user.\
+Firebase is also used to provide Authentication functionality to user.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
