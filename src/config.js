@@ -1,8 +1,8 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyDeTUo-piohcgID_V8vJYo36wL-sQutMo4",
-  authDomain: "reels-facb5.firebaseapp.com",
-  projectId: "reels-facb5",
-  storageBucket: "reels-facb5.appspot.com",
-  messagingSenderId: "600794493976",
-  appId: "1:600794493976:web:b982972a964b43a3d73f6d",
+  apiKey: "AIzaSyDSIw7VbJBuPqM9G4v8NoOE2HGuI7qE8Vc",
+  authDomain: "reels-7a0b2.firebaseapp.com",
+  projectId: "reels-7a0b2",
+  storageBucket: "reels-7a0b2.appspot.com",
+  messagingSenderId: "479759261930",
+  appId: "1:479759261930:web:58f5320abf6e6a12393793",
 };
