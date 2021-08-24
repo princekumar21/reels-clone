@@ -31,6 +31,14 @@ Firebase is also used to provide Authentication functionality to user.
 
 
 
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
